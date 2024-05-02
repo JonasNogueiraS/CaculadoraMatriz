@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>927</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_fundo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>934</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(1, 132, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::NoFrame</enum>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>451</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 127);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <widget class="QLabel" name="label_MSGUSUARIO">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::TextFormat::PlainText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_TITULO">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Trebuchet MS</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255,100);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;CALCULADORA DE MATRIZES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>110</y>
+       <width>661</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <widget class="QTextEdit" name="textEdit_MATRIZ_A">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>171</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_MATRIZ_A">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>-1</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>MATRIZ A</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::TextFormat::PlainText</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_MATRIZ_B">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>30</y>
+        <width>171</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_MATRIZ_B">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>-1</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>MATRIZ B</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::TextFormat::PlainText</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_SOMA">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>40</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>SOMAR (+)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_SUBTRAIR">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>SUBTRAIR (-)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_MULTIPLICAR">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>MULTIPLICAR (X)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_TRANSPOSTA_A">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>TRANSPOSTA DE A</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_TRANSPOSTA_B">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>TRANSPOSTA DE B</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_MAGICA">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>151</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 85, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
+      <widget class="QLabel" name="label_MAGICA">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 85, 0);</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;MATRIZ MÁGICA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_GERAR_MAGICA">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>GERAR MATRIZ</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_ORDEM_MAGICA">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>ORDEM DA MATRIZ</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_DET_A">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>DETERMINANTE DE A</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_DETERMINANTE_B">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>190</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>DETERMINANTE DE B</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_INV_B">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>220</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>INVERSA DE B</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_INV_A">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0.142, y1:0.0227273, x2:1, y2:0, stop:0 rgba(0, 50, 66, 255), stop:1 rgba(255, 255, 255, 255));
+	background-color: rgb(255, 221, 196);
+}
+
+QPushButton:pressed{
+	
+	color: rgb(255, 255, 255);
+	background-color: rgb(85, 255, 127);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>INVERSA DE A</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_RESULTADO">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>130</y>
+       <width>214</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <property name="midLineWidth">
+      <number>0</number>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_RESULTADO">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>100</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;RESULTADO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Emoji">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>300</y>
+       <width>219</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>691</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Balao211x51">
+     <property name="geometry">
+      <rect>
+       <x>706</x>
+       <y>82</y>
+       <width>224</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AvISO61x51">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>40</y>
+       <width>61</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_chao931x31">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>460</y>
+       <width>931</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>label_Balao211x51</zorder>
+    <zorder>label</zorder>
+    <zorder>frame</zorder>
+    <zorder>label_TITULO</zorder>
+    <zorder>frame_2</zorder>
+    <zorder>textEdit_RESULTADO</zorder>
+    <zorder>label_RESULTADO</zorder>
+    <zorder>label_Emoji</zorder>
+    <zorder>label_AvISO61x51</zorder>
+    <zorder>label_chao931x31</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagens/material.qrc"/>
+ </resources>
+ <connections/>
+</ui>

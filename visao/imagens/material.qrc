@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="imagens">
+    <file>emoji.png</file>
+    <file>Frame-PNG.png</file>
+  </qresource>
+</RCC>
