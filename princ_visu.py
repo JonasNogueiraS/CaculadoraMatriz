@@ -13,11 +13,11 @@ class Visu_princ(QMainWindow, Ui_MainWindow):
         self.setWindowTitle("Calculcadora de Matrizes")
         self.iniciar_componentes()
         self.matriz_controle = Matriz_controle ()
-        self.label.setPixmap(QPixmap(r'D:\Jonas\Documents\visua\python\calcMatriz\src\quadro-PNG.png'))
-        self.label_Emoji.setPixmap(QPixmap(r'D:\Jonas\Documents\visua\python\calcMatriz\src\emoji.png'))
-        self.label_chao931x31.setPixmap(QPixmap(r'D:\Jonas\Documents\visua\python\calcMatriz\src\chao_madeira.png'))
-        self.label_Balao211x51.setPixmap(QPixmap(r'D:\Jonas\Documents\visua\python\calcMatriz\src\balao-removebg-preview.png'))
-        self.label_AvISO61x51.setPixmap(QPixmap(r'D:\Jonas\Documents\visua\python\calcMatriz\src\anota.png'))
+        self.label.setPixmap(QPixmap('visao/imagens/quadro-PNG.png'))
+        self.label_Emoji.setPixmap(QPixmap('visao/imagens/emoji.png'))
+        self.label_chao931x31.setPixmap(QPixmap('visao/imagens/chao_madeira.png'))
+        self.label_Balao211x51.setPixmap(QPixmap('visao/imagens/balao-removebg-preview.png'))
+        self.label_AvISO61x51.setPixmap(QPixmap('visao/imagens/anota.png'))
         
     def iniciar_componentes(self):
         self.pushButton_TRANSPOSTA_A.clicked.connect(self.mostrar_transposta_A)
